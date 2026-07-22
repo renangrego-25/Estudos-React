@@ -1,7 +1,5 @@
 function Addtask() {
-    return(
-        <h1>Addtask</h1>
-    )
+    return
 }
 
 export default Addtask
