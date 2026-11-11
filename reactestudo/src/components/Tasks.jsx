@@ -11,10 +11,17 @@ function Tasks(props) {
                         {task.title}
                         
                         
-                        </button>
-                    <button className="bg-slate-400 w-12 rounded-md">
+                    </button>
+                    <button className="bg-slate-400 w-12 rounded-md text-center">
 
-                        <img width="24" height="24" src="https://img.icons8.com/material-outlined/ffffff/forward.png" alt="forward"/>
+                        <img className="text-center flex justify-center" width="24" height="24" src="https://img.icons8.com/material-outlined/ffffff/forward.png" alt="forward"/>
+
+                    </button>
+
+                    <button onClick={() => props.onDeleteTaskClick(task.id)} 
+                    className="bg-slate-400 w-12 rounded-md ">
+
+                        <img className="text-center flex justify-center" width="24" height="24" src="https://img.icons8.com/material-sharp/ffffff/trash.png" alt="trash"/>
 
                     </button>
                 </li>
